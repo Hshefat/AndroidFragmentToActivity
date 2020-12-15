@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:clickable="true"
+    android:id="@+id/first_fragment"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            app:title="@string/profile_title"
+            app:titleTextColor="@color/colorAccent"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:gravity="bottom"
+            android:textSize="30sp"
+            android:text="@string/hello_blank_fragment" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_id"
+        android:id="@+id/button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/secondFragmentClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Click for Next Fragment" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
