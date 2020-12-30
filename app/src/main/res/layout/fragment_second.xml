@@ -10,7 +10,21 @@
 
     
     tools:context=".SecondFragment">
+    <LinearLayout
+        android:id="@+id/toolbarSecond_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profileSecond_toolbar"
+            app:title="@string/profile_title"
+            app:titleTextColor="@color/colorAccent"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- TODO: Update blank fragment layout -->
 
+    </LinearLayout>
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
